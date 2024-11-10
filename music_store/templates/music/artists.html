@@ -1,0 +1,11 @@
+{% extends "partials/base.html" %}
+
+{% block title %} artists listing{% endblock title %}
+{% block body %}
+<h1>All albums ordered by debut year</h1>
+<ul>
+{% for artist in artists %}
+<li>{{ artist }}</li>
+{% endfor %}
+</ul>
+{% endblock body %}
